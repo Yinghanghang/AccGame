@@ -1,4 +1,4 @@
-package edu.sjsu.android.project3yanchen;
+package edu.sjsu.android.project3yingyingzhao;
 
 import android.content.Context;
 

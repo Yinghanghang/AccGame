@@ -1,4 +1,4 @@
-package edu.sjsu.android.project3yanchen;
+package edu.sjsu.android.project3yingyingzhao;
 
 public class Particle {
     private static final float COR = 0.7f;
@@ -16,7 +16,7 @@ public class Particle {
      * @param timestamp timestamp of the sensor event
      */
     public void updatePosition(float x, float y, float z, long timestamp) {
-        float dt = (System.nanoTime() - timestamp) / 1000000000.0f;
+        float dt = (System.nanoTime() - timestamp) / 100000000.0f;
         mVelX += -x * dt;
         mVelY += -y * dt;
         mPosX += mVelX * dt;
