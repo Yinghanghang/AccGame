@@ -80,10 +80,10 @@ public class MyView extends View implements SensorEventListener {
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
-        horizontalBound = (right - left) / 2;
-        verticalBound = (bottom - top) / 2;
-        XOrigin = horizontalBound;
-        YOrigin = verticalBound;
+        horizontalBound = (right - left) / 2 - BALL_SIZE /2f;
+        verticalBound = (bottom - top) / 2 - BALL_SIZE / 2f;
+        XOrigin = (right - left) / 2 ;
+        YOrigin =  (bottom - top) / 2 ;
 //        Log.i("Print", "left" + left);
 //        Log.i("Print", "top" + top);
 //        Log.i("Print", "right" + right);
